@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-image: url('bgwebanime.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Number Checker</title>
+    
+</head>
+<body>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <div class="container">
+        <h1>ASSIGNMENT 1 OTOMATA</h1>
+        <h2>SCIENTIFIC NUMBER CHECKER:</h2>
+        <input type="text" id="numberInput" placeholder="Enter a scientific number">
+        <button onclick="checkScientificNumber()">Submit</button>
+        <div id="result"></div>
+        <div id="studentInfo">Created By : Faith Nathaniel Alexander (221011060063) Information System</div>
+
+    </div>
+    <script>
+        function checkScientificNumber() {
+            var numberInput = document.getElementById("numberInput").value;
+            var scientificRegex = /^[+-]?(\d+(\.\d*)?|\.\d+)(e[+-]?\d+)?$/i;
+            var resultDiv = document.getElementById("result");
+    
+            if (scientificRegex.test(numberInput)) {
+                resultDiv.innerHTML = "Valid scientific notation!";
+                resultDiv.className = "valid"; // Tambahkan kelas 'valid' untuk background hijau
+            } else {
+                resultDiv.innerHTML = "Not a valid scientific notation!";
+                resultDiv.className = "invalid"; // Tambahkan kelas 'invalid' untuk background merah
+            }
+        }
+    </script>
+    
+</body>
+</html>

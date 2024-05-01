@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+h1 {
+    text-align: center;
+    color: #76f1cada; 
+    font-family:'Times New Roman', Times, serif;
+    font-size:x-large;
+ }
+ h2 {
+    text-align: left;
+    letter-spacing: 1px;
+    color: #76f1cada;
+    font-family:sans-serif;
+    font-size:small;
+    
+ }
+div {
+    font-family:monospace;
+    font-size: medium;
+    color: #f708a7;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px transparent;
+    border-radius: 5px;
+    background-color: transparent;
+}
+.InputContainer {
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+input[type="text"] {
+    width: 350px;
+    height: 50px;
+    border: none;
+    outline: none;
+    caret-color: rgb(20, 20, 19);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(12, 12, 12);
+    font-size: 13.4px;
+}
+button {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #4807ec;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #4807ec;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    margin: 10px;
+    width: 89%;
+    
+    
+    
+}
+button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #06f035;
+    z-index: -1;
+}
+button:hover, button:focus {
+color: white;
+}
+
+button:hover:before, button:focus:before {
+transition: 0.5s all ease;
+left: 0;
+right: 0;
+opacity: 1;
+}
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+#studentInfo {
+    margin-top: 20px;
+    text-align: center;
+}
+.valid {
+    background-color: rgba(0, 255, 0, 0.5); 
+    color: black; 
+}
+.invalid {
+    background-color: rgba(255, 0, 0, 0.5); 
+    color: black;
+}
