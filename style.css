@@ -15,14 +15,14 @@ body {
 }
 h1 {
     text-align: center;
-    color: #76f1cada; 
+    color: #07f3db; 
     font-family:'Times New Roman', Times, serif;
     font-size:x-large;
  }
  h2 {
     text-align: left;
     letter-spacing: 1px;
-    color: #76f1cada;
+    color: #07f3db;
     font-family:sans-serif;
     font-size:small;
     
@@ -30,7 +30,7 @@ h1 {
 div {
     font-family:monospace;
     font-size: medium;
-    color: #e9b20f;
+    color: #07f3db;
 }
 .container {
     max-width: 400px;
@@ -73,11 +73,11 @@ button {
     text-align: center;
     font-weight: bold;
     padding: 0.7em 2em;
-    border: 3px solid #4807ec;
+    border: 3px solid #444441;
     border-radius: 35px;
     position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-    color: #4807ec;
+    color: #4b4a4b;
     text-decoration: none;
     transition: 0.3s ease all;
     z-index: 1;
@@ -97,6 +97,7 @@ button:before {
     opacity: 0;
     content: '';
     background-color: #06f035;
+    border-radius: 35px;
     z-index: -1;
 }
 button:hover, button:focus {
